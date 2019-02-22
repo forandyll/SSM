@@ -9,4 +9,9 @@ public interface ProductService {
     List<Product> findAll() throws Exception;
 
     void deleteAll(String[] ids)throws Exception;
+
+    List<Product> searchMsg(String msg) throws Exception;
+
+    void save(Product product);
+
 }

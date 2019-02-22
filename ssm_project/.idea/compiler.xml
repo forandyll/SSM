@@ -9,6 +9,7 @@
         <module name="ssm_project_domain" />
         <module name="ssm_project_mapper" />
         <module name="ssm_project_service" />
+        <module name="ssm_project_util" />
         <module name="ssm_project_web" />
       </profile>
     </annotationProcessing>
@@ -17,6 +18,7 @@
       <module name="ssm_project_domain" target="1.8" />
       <module name="ssm_project_mapper" target="1.8" />
       <module name="ssm_project_service" target="1.8" />
+      <module name="ssm_project_util" target="1.8" />
       <module name="ssm_project_web" target="1.8" />
     </bytecodeTargetLevel>
   </component>

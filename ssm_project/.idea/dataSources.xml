@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="ssm" uuid="e8d114b7-26f5-4a1c-a36f-f5f79167e063">
+    <data-source source="LOCAL" name="ssm" uuid="54a29fdc-1910-488d-a429-5e5385a9d9db">
       <driver-ref>oracle</driver-ref>
       <synchronize>true</synchronize>
       <auto-commit>false</auto-commit>
       <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
-      <jdbc-url>jdbc:oracle:thin:@192.168.181.128:1521:orcl</jdbc-url>
+      <jdbc-url>jdbc:oracle:thin:@192.168.171.128:1521:orcl</jdbc-url>
       <driver-properties>
         <property name="v$session.program" value="DataGrip" />
       </driver-properties>

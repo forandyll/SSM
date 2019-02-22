@@ -25,4 +25,15 @@ public class ProductServiceImpl implements ProductService{
     public void deleteAll(String[] ids) throws Exception {
         productMapper.deleteAll(ids);
     }
+
+    @Override
+    public List<Product> searchMsg(String msg) throws Exception {
+        List<Product> list=productMapper.searchMsg(msg);
+        return list;
+    }
+
+    @Override
+    public void save(Product product) {
+        productMapper.save(product);
+    }
 }

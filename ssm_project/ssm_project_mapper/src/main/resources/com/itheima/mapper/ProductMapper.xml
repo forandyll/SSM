@@ -7,6 +7,20 @@
         SELECT * FROM PRODUCT
     </select>
 
+    <select id="searchMsg" parameterType="string" resultType="product">
+        SELECT * FROM PRODUCT
+        <where>
+            <if test="value!=null and value.length>0">
+                and productname like '%${value}%'
+            </if>
+        </where>
+    </select>
+
+    <insert id="save" parameterType="product" >
+        INSERT INTO PRODUCT(PRODUCTNUM,PRODUCTNAME,CITYNAME,DEPARTURETIME,PRODUCTPRICE,PRODUCTDESC,PRODUCTSTATUS)VALUES(#{productNum},#{productName},#{cityName},#{departureTime},#{productPrice},#{productDesc},#{productStatus})
+    </insert>
+
+
     <delete id="deleteAll" parameterType="list">
         DELETE FROM PRODUCT
         <where>
@@ -17,4 +31,6 @@
             </if>
         </where>
     </delete>
+
+
 </mapper>

@@ -201,13 +201,14 @@
 										<button type="button" class="btn btn-default" title="删除" id="deletAll">
 											<i class="fa fa-trash-o"></i> 删除
 										</button>
-										<button type="button" class="btn btn-default" title="开启">
+										<button type="button" class="btn btn-default" title="开启" id="openbtn">
 											<i class="fa fa-check"></i> 开启
 										</button>
-										<button type="button" class="btn btn-default" title="屏蔽">
+										<button type="button" class="btn btn-default" title="屏蔽"id="closebtn">
 											<i class="fa fa-ban"></i> 屏蔽
 										</button>
-										<button type="button" class="btn btn-default" title="刷新">
+										<button type="button" class="btn btn-default" title="刷新"
+												onclick="location.href='${pageContext.request.contextPath}/pages/product-list.jsp'">
 											<i class="fa fa-refresh"></i> 刷新
 										</button>
 									</div>
@@ -491,9 +492,11 @@
             });
             //搜索
 			$("#search").click(function () {
-				alert("ok"+$("#searchId").val());
+				//alert("ok"+$("#searchId").val());
+				var sc=$("#searchId").val;
+                window.location.href="${pageContext.request.contextPath}/product/searchMsg?searchvalue="+sc;
             });
-        })
+        });
 		function updateProduct(id) {
 			alert(id);
         }
