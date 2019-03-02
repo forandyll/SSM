@@ -23,7 +23,7 @@ public class ProductController {
         return "product-list";
     }
 
-    //åˆ é™¤
+    //É¾³ý
     @RequestMapping("/deleteAll")
     public String deleteAll(String[] ids)throws Exception{
        /* for (int i = 0; i < ids.length; i++) {
